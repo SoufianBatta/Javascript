@@ -1,0 +1,44 @@
+:root {
+    --grid-size: 450px;
+    --margin-size: 10px;
+    --square-size: calc((var(--grid-size) / 3) - var(--margin-size));
+    --colore-bordo: rgba(0,0,0, 0.5);
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#test {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#grid {
+    display: flex;
+    background-color: var(--colore-bordo);
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    height: var(--grid-size);
+    width: var(--grid-size);
+    
+}
+
+#grid div {
+    background-color: bisque;
+    height: var(--square-size);
+    width: var(--square-size);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#grid div img {
+    width: 100%;
+}
