@@ -47,10 +47,10 @@ function checkbox(box1,box2,box3)
 
 function checkWinner()
 {
-    let rowWinner = checkbox('one','two','three') || checkbox('four','five','six') || checkbox('seven','eight','nine');
-    let columnWinner = checkbox('one','four','seven') || checkbox('two','five','eight') || checkbox('three','six','nine');
-    let diagonalWinner = checkbox('one', 'five', 'nine') || checkbox('three','five', 'seven');
-    return rowWinner || columnWinner || diagonalWinner; 
+    let rowwinner = checkbox('one','two','three') || checkbox('four','five','six') || checkbox('seven','eight','nine');
+    let columnwinner = checkbox('one','four','seven') || checkbox('two','five','eight') || checkbox('three','six','nine');
+    let diagonalwinner = checkbox('one','five','nine') || checkbox('three','seven','five');
+    return rowwinner || columnwinner || diagonalwinner;
 }
 
 function displayWinner(){
